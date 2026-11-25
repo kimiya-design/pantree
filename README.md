@@ -2,9 +2,7 @@
 
 A mobile pantry app that turns grocery photos into an inventory and helps you use food before it expires.
 
-![Pantree demo](media/demo.gif)
-
-> The source code is private. I’m happy to walk through the project in an interview or share temporary read-only access.
+> The source code is private. Feel free to reach out for a read-only access.
 
 ## What it does
 
@@ -15,12 +13,6 @@ A mobile pantry app that turns grocery photos into an inventory and helps you us
 - Supports dietary preferences set during onboarding or in Settings.
 - Expiry push notifications are in progress.
 
-## Screenshots
-
-| Home | Inventory | Scan | Chat |
-|---|---|---|---|
-| ![Home](media/home.png) | ![Inventory](media/inventory.png) | ![Scan](media/scan.png) | ![Chat](media/chat.png) |
-
 ## Built with
 
 - **App:** React Native, React Navigation, Zustand, Reanimated
@@ -30,8 +22,6 @@ A mobile pantry app that turns grocery photos into an inventory and helps you us
 - **Subscriptions and notifications:** RevenueCat, OneSignal
 
 ## Architecture
-
-![Pantree architecture](media/architecture.png)
 
 The app sends requests to Supabase Edge Functions; it never calls AI providers directly. Edge Functions keep API keys on the backend, enforce plan limits, call AI models, and write to the database. All tables use row-level security.
 
@@ -45,15 +35,4 @@ The app sends requests to Supabase Edge Functions; it never calls AI providers d
 
 ## Status
 
-In development. Solo project; I built the full stack.
-
-## About me
-
-- **Name:** [name]
-- **School / year:** [school/year]
-- **LinkedIn:** [LinkedIn]
-- **Email:** [email]
-
-## License
-
-Copyright (c) 2026 [name]. All rights reserved.
+In development
